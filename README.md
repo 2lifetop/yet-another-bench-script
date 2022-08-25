@@ -11,11 +11,11 @@ View YABS usage stats [here](https://yabs.rowe.sh).
 
 ## How to Run
 
-`curl -sL yabs.sh | bash` 
+`curl -sL https://ghproxy.com/https://raw.githubusercontent.com/2lifetop/yet-another-bench-script/master/yabs.sh | bash` 
 
 or 
 
-`wget -qO- yabs.sh | bash`
+`wget -qO- https://ghproxy.com/https://raw.githubusercontent.com/2lifetop/yet-another-bench-script/master/yabs.sh | bash`
 
 This script has been tested on the following Linux distributions: CentOS 6+, Debian 8+, Fedora 30, and Ubuntu 16.04+. It is designed to not require any external dependencies to be installed nor elevated privileges to run.
 
@@ -30,7 +30,7 @@ This script has been tested on the following Linux distributions: CentOS 6+, Deb
 By default, the script runs all three tests described in the next section below. In the event that you wish to skip one or more of the tests, use the commands below:
 
 ```
-curl -sL yabs.sh | bash -s -- -flags
+curl -sL https://ghproxy.com/https://raw.githubusercontent.com/2lifetop/yet-another-bench-script/master/yabs.sh | bash -s -- -flags
 ```
 
 * `-b` this option forces use of pre-compiled binaries from repo over local packages
