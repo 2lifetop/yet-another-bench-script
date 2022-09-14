@@ -780,7 +780,7 @@ function launch_geekbench {
 	elif [[ $VERSION == *4* && $ARCH != *aarch64* && $ARCH != *arm* ]]; then # Geekbench v4
 		echo -en "\nRunning GB4 benchmark test... *cue elevator music*"
 		# download the latest Geekbench 4 tarball and extract to geekbench temp directory
-		$DL_CMD https://cdn.geekbench.com/Geekbench-4.4.4-Linux.tar.gz  | tar xz --strip-components=1 -C $GEEKBENCH_PATH &>/dev/null
+		$DL_CMD https://www.xuehaiwu.com/wp-content/uploads/2022/09/Geekbench-4.4.4-Linux.tar.gz  | tar xz --strip-components=1 -C $GEEKBENCH_PATH &>/dev/null
 
 		if [[ "$ARCH" == *"x86"* ]]; then
 			# check if geekbench file exists
@@ -811,9 +811,9 @@ function launch_geekbench {
 			echo -en "\nRunning GB5 benchmark test... *cue elevator music*"
 			# download the latest Geekbench 5 tarball and extract to geekbench temp directory
 			if [[ $ARCH = *aarch64* || $ARCH = *arm* ]]; then
-				$DL_CMD https://cdn.geekbench.com/Geekbench-5.4.4-LinuxARMPreview.tar.gz  | tar xz --strip-components=1 -C $GEEKBENCH_PATH &>/dev/null
+				$DL_CMD https://www.xuehaiwu.com/wp-content/uploads/2022/09/Geekbench-5.4.4-LinuxARMPreview.tar.gz  | tar xz --strip-components=1 -C $GEEKBENCH_PATH &>/dev/null
 			else
-				$DL_CMD https://cdn.geekbench.com/Geekbench-5.4.5-Linux.tar.gz | tar xz --strip-components=1 -C $GEEKBENCH_PATH &>/dev/null
+				$DL_CMD https://www.xuehaiwu.com/wp-content/uploads/2022/09/Geekbench-5.4.5-Linux.tar.gz | tar xz --strip-components=1 -C $GEEKBENCH_PATH &>/dev/null
 			fi
 
 			# check if geekbench file exists
